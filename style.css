@@ -4,34 +4,26 @@
     overscroll-behavior-y: none;
 }
 
+
+/* フォントの指定 */
+
 body {
     font-family: "M PLUS 1p", sans-serif;
 }
 
-header {
-    position: relative;
-}
 
-header h1 {
-    position: absolute;
-    font-size: 40px;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    -webkit-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%);
-    padding-left: 10px;
-    padding-right: 10px;
-    border: solid 2px #111111;
-    /*文字の装飾は省略*/
-}
+/* ヘッダーの画像 */
 
 header img {
+    margin: auto;
     width: 100%;
-    height: 800px;
+    height: auto;
     object-fit: cover;
     box-shadow: 0px 1px 5px 5px rgba(0, 0, 0, 0.226);
 }
+
+
+/* ここから本題 */
 
 main {
     height: auto;
@@ -40,12 +32,18 @@ main {
     text-align: center;
 }
 
+
+/* 自己紹介 */
+
 .introduction {
     padding-top: 50px;
     padding-bottom: 50px;
     border-bottom: solid 1px#eeeeee;
     margin: auto;
 }
+
+
+/* 自己紹介の文と画像を横にしている */
 
 .yoko {
     width: 50%;
@@ -59,15 +57,30 @@ main {
     border-radius: 50%;
 }
 
+
+/* スキル */
+
+.skills {
+    border-bottom: solid 1px#eeeeee;
+    position: relative;
+    height: auto;
+}
+
+
+/* タブ機能 */
+
 .tab_wrap {
     width: 50%;
-    height: 400px;
+    height: auto;
     margin: 10px auto;
 }
 
 input[type="radio"] {
     display: none;
 }
+
+
+/* タブ */
 
 .tab_area {
     font-size: 0;
@@ -88,9 +101,15 @@ input[type="radio"] {
     border: #eeeeee solid 2px;
 }
 
+
+/* タブのアニメーション */
+
 .tab_area label:hover {
     opacity: 0.5;
 }
+
+
+/* パネル */
 
 .panel_area {
     background: #fff;
@@ -102,12 +121,6 @@ input[type="radio"] {
     height: 350px;
     padding: 80px 0;
     display: none;
-}
-
-.tab_panel p {
-    font-size: 14px;
-    letter-spacing: 1px;
-    text-align: center;
 }
 
 #tab1:checked~.tab_area .tab1_label {
@@ -146,28 +159,56 @@ input[type="radio"] {
     display: block;
 }
 
-.skills {
-    border-bottom: solid 1px#eeeeee;
-    position: relative;
-    height: 630px;
+
+/* パネル内のimgタグ */
+
+.panel_area img {
+    width: 40%;
 }
+
+
+/* パネルのpタグ */
+
+.tab_panel p {
+    font-size: 14px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.imgsmoll {
+    width: 60%;
+    margin: auto;
+}
+
+
+/* 作品紹介 */
 
 .work {
     border-bottom: solid 1px#eeeeee;
 }
 
+
+/* ライズ */
+
 .rise {
     background-color: #eeeeee;
     margin: 20px auto;
-    width: 1000px;
-    border-radius: 10%;
+    width: 70%;
+    border-radius: 100px;
     transition: box-shadow 0.5s;
 }
+
+
+/* 影のアニメーション */
 
 .rise:hover {
     box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.226);
 }
 
+
+/* フッター */
+
 footer {
     text-align: center;
+    margin: 5px;
 }
