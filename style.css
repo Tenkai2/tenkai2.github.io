@@ -45,6 +45,10 @@ main {
 
 /* 自己紹介の文と画像を横にしている */
 
+.introduction img {
+    width: 40%;
+}
+
 .yoko {
     width: 50%;
     margin: auto;
@@ -196,6 +200,11 @@ input[type="radio"] {
     width: 70%;
     border-radius: 100px;
     transition: box-shadow 0.5s;
+}
+
+.rise iframe {
+    width: 60%;
+    height: 315px;
 }
 
 
